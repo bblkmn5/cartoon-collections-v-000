@@ -10,6 +10,7 @@ def summon_captain_planet(veggies)
     while veggies.length > i
     puts "#{veggie.upcase}!"
     i+=1
+  end
 end
 
 def long_planeteer_calls# code an argument here
