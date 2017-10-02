@@ -4,8 +4,12 @@ def roll_call_dwarves(dwarves)
   end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(veggies)
+  i = 0
+  veggies.each_with_index.map do |veggie|
+    while veggies.length > i
+    puts "#{veggie.upcase}!"
+    i+=1
 end
 
 def long_planeteer_calls# code an argument here
