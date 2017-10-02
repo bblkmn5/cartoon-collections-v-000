@@ -1,18 +1,11 @@
 def roll_call_dwarves(dwarves)
-  dwarves.each_with_index.map do |dwarf, index|
-    puts "#{index+1}.#{dwarf}"
+  dwarves.each_with_index(1) do |dwarf, index|
+    puts "#{index}. #{dwarf}"
   end
 end
 
-def summon_captain_planet(veggies)
-  i = 0
-  veggies.each_with_index.map do |veggie|
-    while veggies.length > i
-      veggie.upcase
-    puts "#{veggie}!"
-    i+=1
-  end
-end
+def summon_captain_planet(planeteer_calls)
+  planeteer_calls.map { |veggies| veggies.capitalize + "!"}
 end
 
 def long_planeteer_calls# code an argument here
