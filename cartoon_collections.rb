@@ -8,7 +8,8 @@ def summon_captain_planet(veggies)
   i = 0
   veggies.each_with_index.map do |veggie|
     while veggies.length > i
-    puts "#{veggie.upcase}!"
+      veggie.upcase
+    puts "#{veggie}!"
     i+=1
   end
 end
